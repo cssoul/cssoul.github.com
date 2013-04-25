@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>响应式设计</title>
+        <meta charset="utf-8" />
+	    <meta name="viewport" content="width=1024" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="author" content="黑幕困兽" />
+	    <link href="../../libs/impress.js/css/impress-demo.css" rel="stylesheet" />
+		<style type="text/css">
+			body{background:#111;}
+		</style>
+        <script type="text/javascript" src="../../libs/jquery/jquery.1.3.2.js"></script>
+    </head>
+    
+    <body class="impress-not-supported">
+    	<!--不支持impress.js提示-->
+    	<div class="fallback-message">
+		    <p>你的浏览器不支持impress.js</p>
+		    <p>请使用最新的<b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b>浏览器</p>
+		</div>
+        
+        <div id="impress">
+        
+        	<div id="title" class="step" data-x="-4000" data-y="1000" data-rotate="90">
+		        <h1>Head First <em>Icon Font</em></h1>
+		        <div class="footnote">
+		        	@ 黑幕困兽 / 张军<br />
+		        	2013-04-25
+		        </div>
+		    </div>
+            
+        </div>
+ 		
+		<div class="hint">
+		    <p>使用空格键或箭头键切换页面</p>
+		</div>
+
+		<script>
+			if ("ontouchstart" in document.documentElement) { 
+				document.querySelector(".hint").innerHTML = "<p>点击左边或者右边切换页面</p>";
+			}
+		</script>
+
+		<script src="../../libs/impress.js/js/impress.js"></script>
+        <script src="../../libs/prettify/prettify.js"></script>
+		<script>
+			impress().init();
+			prettyPrint();
+        </script>
+        
+	</body>
+</html>
