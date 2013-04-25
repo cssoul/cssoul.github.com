@@ -3,31 +3,84 @@
     <head>
         <title>响应式设计</title>
         <meta charset="utf-8" />
-	    <meta name="viewport" content="width=1024" />
-	    <meta name="apple-mobile-web-app-capable" content="yes" />
-	    <meta name="author" content="黑幕困兽" />
-	    <link href="../../libs/impress.js/css/impress-demo.css" rel="stylesheet" />
-		<style type="text/css">
-			body{background:#111;}
-		</style>
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="author" content="黑幕困兽" />
+        <link href="../../libs/impress.js/css/impress-demo.css" rel="stylesheet" />
+        <style type="text/css">
+            body{background:#111;font-family: '微软雅黑';color:#333;}
+            #title {font-family:"微软雅黑";}
+            #title .footnote {font-family:"宋体";}
+            .step,.txt div{font-family: '微软雅黑';}
+            .slide{background: none;border:none;}
+            .slide div{font-size:28px; line-height:45px;margin-top: 100px;}
+            .slide p{margin-bottom: 20px;font-family:"宋体";}
+            .slide .text{margin-left: 0;}
+        </style>
         <script type="text/javascript" src="../../libs/jquery/jquery.1.3.2.js"></script>
     </head>
-    
     <body class="impress-not-supported">
-    	<!--不支持impress.js提示-->
-    	<div class="fallback-message">
-		    <p>你的浏览器不支持impress.js</p>
-		    <p>请使用最新的<b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b>浏览器</p>
-		</div>
-        
+        <!--不支持impress.js提示-->
+        <div class="fallback-message">
+            <p>Sorry,你的浏览器不支持impress.js</p>
+            <p>请使用最新的<b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b>浏览器</p>
+        </div>
+
         <div id="impress">
-        
-        	<div id="title" class="step" data-x="-4000" data-y="1000" data-rotate="90">
-		        <h1>Head First <em>Icon Font</em></h1>
-		        <div class="footnote">
-		        	@ 黑幕困兽 / 张军<br />
-		        	2013-04-25
-		        </div>
+            <div id="title" class="step" data-x="-4000" data-y="1000" data-rotate="90">
+                <h1><em>响应式</em>网页设计</h1>
+                <div class="footnote">
+                    @ 黑幕困兽 / 张军<br />
+                    2013-04-25
+                </div>
+            </div>
+
+            <div class="step slide" data-x="-2500" data-y="500">
+                <h3>一、概念</h3>
+                <div>
+                    <p>响应式网页设计的概念最先由Ethan Marcotte提出;</p>
+
+                    <p>响应式网页设计是一种能在不同分辨率的设备上提供完美的用户体验的网页设计方案，它能够减少用户的缩放、平移和滚动操作。</p>
+
+                    <p class="text">
+                        <a href="http://alistapart.com/article/responsive-web-design" target="_blank">http://alistapart.com/article/responsive-web-design</a>
+                    </p>
+                </div>
+            </div>
+                
+            <div class="step slide" data-x="-900" data-y="500">
+                <h3>二、Why？</h3>
+                <div>
+                    <p><span>Ⅰ、</span>一套代码兼容多个设备</p>
+                    <p><span>Ⅱ、</span>拥有一致的用户体验</p>
+                    <p><span>Ⅲ、</span>能够适配位置分辨率的设备</p>
+                    <p><span>Ⅳ、</span></p>
+                </div>
+            </div>
+            
+            
+            <div class="step pic" data-x="500" data-y="500">
+                <p><img src="img/01.jpg" /></p>
+            </div>
+            
+            <div class="step slide" data-x="2000" data-y="500">
+		        <q>
+		        	<span>*</span> 有视觉引导功能<br/>
+                    <span>*</span> 彰显网站的专业性<br/>
+                    <span>*</span> 增强网站交互性<br/>
+		        	<span>*</span> 辅助理解文字内容<br/>
+		        	<span>*</span> 为设计增添动感<br/>
+		        </q>
+		    </div>
+            
+            <div class="step slide" data-x="2000" data-y="500">
+		        <q>
+		        	<span>*</span> 有视觉引导功能<br/>
+                    <span>*</span> 彰显网站的专业性<br/>
+                    <span>*</span> 增强网站交互性<br/>
+		        	<span>*</span> 辅助理解文字内容<br/>
+		        	<span>*</span> 为设计增添动感<br/>
+		        </q>
 		    </div>
             
         </div>
