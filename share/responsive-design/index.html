@@ -7,15 +7,22 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="author" content="黑幕困兽" />
         <link href="../../libs/impress.js/css/impress-demo.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Paprika">
         <style type="text/css">
-            body{background:#111;font-family: '微软雅黑';color:#333;}
+            body{background:#28272f;font-family:'微软雅黑';color:#333;}
             #title {font-family:"微软雅黑";}
-            #title .footnote {font-family:"宋体";}
+            #title h1{color:#0070c0;letter-spacing:2px;margin-bottom: 50px;}
             .step,.txt div{font-family: '微软雅黑';}
-            .slide{background: none;border:none;}
-            .slide div{font-size:28px; line-height:45px;margin-top: 100px;}
-            .slide p{margin-bottom: 20px;font-family:"宋体";}
+            .slide{background:#28272f;border:none;box-shadow:none;}
+            .slide h3{color: #A6C828;font-size: 40px;color:#0070c0;}
+            .slide div{font-size:28px; line-height:45px;margin-top: 80px;}
+            .slide p{margin-bottom: 30px;}
+            .slide p span{color:#A6C828;}
+            .slide p em{color:#f00;margin-left: 10px;font-style:normal;}
             .slide .text{margin-left: 0;}
+            .pic{background: #fff;width: 900px;padding: 60px;text-align: center;}
+            .pic img{vertical-align: middle;}
+            .txt{color:#0070c0;letter-spacing: 2px;}
         </style>
         <script type="text/javascript" src="../../libs/jquery/jquery.1.3.2.js"></script>
     </head>
@@ -28,7 +35,7 @@
 
         <div id="impress">
             <div id="title" class="step" data-x="-4000" data-y="1000" data-rotate="90">
-                <h1><em>响应式</em>网页设计</h1>
+                <h1>响应式Web设计</h1>
                 <div class="footnote">
                     @ 黑幕困兽 / 张军<br />
                     2013-04-25
@@ -36,51 +43,85 @@
             </div>
 
             <div class="step slide" data-x="-2500" data-y="500">
-                <h3>一、概念</h3>
+                <h3>响应式概念</h3>
                 <div>
-                    <p>响应式网页设计的概念最先由Ethan Marcotte提出;</p>
+                    <p style="font-family:Paprika;">“It is the nature of the web to be flexible, and it should be our role as designers and developers to embrace this flexibility, and produce pages which, by being flexible, are accessible to all.”
+                    </p>
 
-                    <p>响应式网页设计是一种能在不同分辨率的设备上提供完美的用户体验的网页设计方案，它能够减少用户的缩放、平移和滚动操作。</p>
-
-                    <p class="text">
-                        <a href="http://alistapart.com/article/responsive-web-design" target="_blank">http://alistapart.com/article/responsive-web-design</a>
+                    <p style="text-align:right;font-size:16px;color:#666;font-family:Paprika;">
+                        —  A Dao of Web Design
                     </p>
                 </div>
             </div>
-                
-            <div class="step slide" data-x="-900" data-y="500">
-                <h3>二、Why？</h3>
+
+            <div class="step pic" data-x="-900" data-y="500">
+                <img src="img/01.jpg" />
+            </div>
+
+            <div class="step slide" data-x="500" data-y="500">
+                <h3>Web设计面临问题</h3>
                 <div>
-                    <p><span>Ⅰ、</span>一套代码兼容多个设备</p>
-                    <p><span>Ⅱ、</span>拥有一致的用户体验</p>
-                    <p><span>Ⅲ、</span>能够适配位置分辨率的设备</p>
-                    <p><span>Ⅳ、</span></p>
+                    <p><span>Ⅰ、</span>需要兼容一系列不同操作系统、分辨率的设备</p>
+                    <p><span>Ⅱ、</span>不同的操作系统，交互方式存在很多差异</p>
+                    <p><span>Ⅲ、</span>移动设备层出不穷，新设备分辨率变数大</p>
+                    <p><span>Ⅳ、</span>国内移动流量收费高，移动用户需要更节省流量的网站</p>
+                </div>
+            </div>
+
+            <div class="step pic" data-x="2000" data-y="500">
+                <img src="img/02.jpg" />
+            </div>
+            
+
+            <div class="step slide" data-x="3500" data-y="500">
+                <h3>如何解决这些问题？</h3>
+                <div>
+                    <p><span>Ⅰ、</span>针对不同设备，设计不同的UI、交互方式 <em>X</em></p>
+                    <p><span>Ⅱ、</span>使用固定的模版，等比缩放适应不同的分辨率<em>X</em></p>
+                    <p><span>Ⅲ、</span>用同一套HTML适配所有设备，根据UA判断加载所需文件 <em>√</em></p>
+                </div>
+            </div>
+                
+            <div class="step slide" data-x="5000" data-y="500" data-rotate="90">
+                <h3>为什么用响应式设计？</h3>
+                <div>
+                    <p><span>Ⅰ、</span>使用一套设计，兼容所有的平台和设备</p>
+                    <p><span>Ⅱ、</span>使用同一个URL，无需域名重定向</p>
+                    <p><span>Ⅲ、</span>降低维护成本，因为响应式设计只有一套布局</p>
+                    <p><span>Ⅳ、</span>能够更加方便统计不同设备下网站的流量</p>
+                    <p>......</p>
                 </div>
             </div>
             
             
-            <div class="step pic" data-x="500" data-y="500">
-                <p><img src="img/01.jpg" /></p>
+            <div class="step slide" data-x="5000" data-y="1500" data-rotate="180">
+                <h3>响应式设计流程</h3>
+                <div>
+                    <p><span>Ⅰ、</span>明确需要兼容的设备类型、屏幕尺寸</p>
+                    <p><span>Ⅱ、</span>确定几个尺寸，制定不同的线框交互原型</p>
+                    <p><span>Ⅲ、</span>设计师根据线框图，设计不同尺寸对应的视觉稿</p>
+                    <p><span>Ⅳ、</span>前端开发</p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="3500" data-y="1500" data-rotate="180">
+                <h3>响应式设计要点</h3>
+                <div>
+                    <p><span>Ⅰ、</span>设置Meta标签，避免页面自动缩放尺寸</p>
+                    <p><span>Ⅱ、</span>抛弃传统的固定布局，使用流体的网格设计</p>
+                    <p><span>Ⅲ、</span>灵活处理图片、视频媒体展现</p>
+                    <p><span>Ⅳ、</span>使用媒体查询（Media Queries），为不同区间的分辨率做不同设计</p>
+                </div>
             </div>
             
-            <div class="step slide" data-x="2000" data-y="500">
-		        <q>
-		        	<span>*</span> 有视觉引导功能<br/>
-                    <span>*</span> 彰显网站的专业性<br/>
-                    <span>*</span> 增强网站交互性<br/>
-		        	<span>*</span> 辅助理解文字内容<br/>
-		        	<span>*</span> 为设计增添动感<br/>
-		        </q>
-		    </div>
-            
-            <div class="step slide" data-x="2000" data-y="500">
-		        <q>
-		        	<span>*</span> 有视觉引导功能<br/>
-                    <span>*</span> 彰显网站的专业性<br/>
-                    <span>*</span> 增强网站交互性<br/>
-		        	<span>*</span> 辅助理解文字内容<br/>
-		        	<span>*</span> 为设计增添动感<br/>
-		        </q>
+            <div class="step slide" data-x="2000" data-y="1500" data-rotate="180">
+		        <pre class="prettyprint">
+                    .icon{
+                        font-family: 'somefont'; 
+                        font-weight: 700;
+                        font-style: normal;
+                    }
+		        </pre>
 		    </div>
             
         </div>
@@ -98,8 +139,10 @@
 		<script src="../../libs/impress.js/js/impress.js"></script>
         <script src="../../libs/prettify/prettify.js"></script>
 		<script>
-			impress().init();
-			prettyPrint();
+        $(document).ready(function() {
+            impress().init();
+            prettyPrint();
+        });
         </script>
         
 	</body>
