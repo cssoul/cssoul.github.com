@@ -1,1 +1,1 @@
-﻿响应式设计
+﻿Mobile Information Weekly
