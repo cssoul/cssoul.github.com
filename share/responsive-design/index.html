@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>响应式设计</title>
+        <title>响应式Web设计</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=1024" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -89,7 +89,7 @@
                 <div>
                     <p><span>Ⅰ、</span>使用一套设计，兼容所有的平台和设备</p>
                     <p><span>Ⅱ、</span>使用同一个URL，无需域名重定向</p>
-                    <p><span>Ⅲ、</span>降低维护成本，因为响应式设计只有一套布局</p>
+                    <p><span>Ⅲ、</span>降低维护成本，因为"响应式设计"只有一套布局</p>
                     <p><span>Ⅳ、</span>能够更加方便统计不同设备下网站的流量</p>
                     <p>......</p>
                 </div>
@@ -100,7 +100,7 @@
                 <h3>响应式设计流程</h3>
                 <div>
                     <p><span>Ⅰ、</span>明确需要兼容的设备类型、屏幕尺寸</p>
-                    <p><span>Ⅱ、</span>确定几个尺寸，制定不同的线框交互原型</p>
+                    <p><span>Ⅱ、</span>确定“响应区间”，制定不同的线框交互原型</p>
                     <p><span>Ⅲ、</span>设计师根据线框图，设计不同尺寸对应的视觉稿</p>
                     <p><span>Ⅳ、</span>前端进行HTML和CSS编码，并保持和视觉良好的沟通</p>
                     <p><span>Ⅴ、</span>前后端约定加载、输出的文件和数据</p>
@@ -111,41 +111,73 @@
             <div class="step slide" data-x="3500" data-y="1500" data-rotate="180">
                 <h3>Ⅰ、明确需要兼容的设备</h3>
                 <div>
-                    <p>现如今，PC、平板、智能手机屏幕尺寸大小不等，如果要做到完美的适配所有设备还是有技术难度和开发成本。所以我觉得目前“相应式设计”可以先挑选主流的设备作为首要适配目标，其他尺寸的设备做宽度自适应处理。</p>
-
-                    <p class="note">
-                        <a href="http://nmsdvid.com/snippets/">http://nmsdvid.com/snippets/</a>
-                    </p>
+                    <p>现如今，PC、平板、智能手机屏幕尺寸大小不等，要完美的实现适配所有设备显然不太靠谱。</p>
+                    <p>“相应式设计”其实可以先挑选主流的设备作为适配目标，其他尺寸的设备做宽度自适应处理即可。</p>
+                    <p><img src="img/03.jpg" /></p>
                 </div>
             </div>
 
             <div class="step slide" data-x="2000" data-y="1500" data-rotate="180">
-                <h3>Ⅱ、确定几个尺寸</h3>
+                <h3>Ⅱ、确定“响应区间”，设计交互原型</h3>
                 <div>
-                    <p>选好适配的设备类型，我们即可约定几个固定尺寸，以此展开设定相应的区间范围。</p>
-
-                    <p class="note">
-                        <a href="http://nmsdvid.com/snippets/">http://nmsdvid.com/snippets/</a>
-                    </p>
+                    <p>接下来我们便可以约定几个固定尺寸（比如：320px,480px，1024px...），以此为基准设定相应的区间值。</p>
+                    <p>CSS框架<a href="http://lessframework.com/" title=""><span>lessframework</span></a>也是采用这种思路，对PC到Mobile的过渡制定了几个“响应区间”，值得借鉴学习。</p>
+                    <p><img src="img/04.jpg" /></p>
                 </div>
             </div>
 
             <div class="step slide" data-x="500" data-y="1500" data-rotate="180">
-                <h3>响应式设计要点</h3>
+                <h3>Ⅲ、确定“响应区间”，设计交互原型</h3>
                 <div>
-                    <p><span>Ⅰ、</span>设置Meta标签，避免页面自动缩放尺寸</p>
-                    <p><span>Ⅱ、</span>抛弃传统的固定布局，使用流体的网格设计</p>
-                    <p><span>Ⅲ、</span>灵活处理图片、视频媒体展现</p>
-                    <p><span>Ⅳ、</span>使用媒体查询（Media Queries），为不同区间的分辨率做不同设计</p>
+                    <p>交互稿只需要做固定尺寸的草图，但是需要标注出哪些是固定宽度，哪些是需要迎伸、扩张。</p>
+                    <p>交互同学需要考虑可操作性，避免出现在移动设备不可点击，以及误操作现象。有兴趣可以看看<a href="" title="http://www.whatcreative.co.uk/blog/tips/designing-for-touch-screen/">Designing for Touch Screen</a>这边文章，会对触屏设备设计有所帮助。</p>
+                    <p><img src="img/05.jpg" /></p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="1500" data-rotate="180">
+                <h3>Ⅲ、视觉设计UI视图</h3>
+                <div>
+                    <p>UI风格尽量简单，最好能让前端同学用CSS3实现；</p>
+                    <p>图标、背景应最好考虑纯色或者能够方便拉伸的渐变，避免维护两套、甚至多套图标；</p>
+                    <p>由于“响应式设计”常常需要通过百分比控制元素宽度，所以不要过分追求像素精准度。</p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="-2500" data-y="1500" data-rotate="180">
+                <h3>Ⅳ、前端HTML、CSS编码</h3>
+                <div>
+                    <p>设置Meta标签，避免页面自动缩放尺寸；</p>
+                    <p>抛弃传统的固定布局，使用流体的网格设计；</p>
+                    <p>灵活处理图片、视频媒体展现；</p>
+                    <p>使用媒体查询（Media Queries），为不同区间的分辨率做不同设计。</p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="-2500" data-y="2500" data-rotate="180">
+                <h3>Ⅴ、前后端联调数据</h3>
+                <div>
+                    <p>“响应式设计”</p>
+                    <p>抛弃传统的固定布局，使用流体的网格设计；</p>
+                    <p>灵活处理图片、视频媒体展现；</p>
+                    <p>使用媒体查询（Media Queries），为不同区间的分辨率做不同设计。</p>
                 </div>
             </div>
             
-            <div class="step slide" data-x="500" data-y="1500" data-rotate="180">
+            <div class="step slide" data-x="-1000" data-y="2500" data-rotate="180">
 		        <pre class="prettyprint">
                     http://nmsdvid.com/snippets/
                     http://www.responsivegridsystem.com/
+                    http://responsive-nav.com/
 		        </pre>
 		    </div>
+
+            <div id="tiny" class="step" data-x="1500" data-y="5000" data-z="-3000" data-rotate="360" data-scale="1">
+                <p style="color:#9D9D9D">Thank You！</p>
+            </div>
+
+
+            <div id="overview" class="step" data-x="500" data-y="2000" data-scale="8"></div>
             
         </div>
  		
