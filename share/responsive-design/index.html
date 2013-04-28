@@ -17,6 +17,7 @@
             .slide h3{color: #A6C828;font-size: 40px;color:#0070c0;}
             .slide div{font-size:28px; line-height:45px;margin-top: 80px;}
             .slide p{margin-bottom: 30px;}
+            .slide p a{font-family:'Paprika';font-size:24px;padding: 0 5px;}
             .slide p span{color:#A6C828;}
             .slide p em{color:#f00;margin-left: 10px;font-style:normal;}
             .slide .text{margin-left: 0;}
@@ -73,7 +74,6 @@
             <div class="step pic" data-x="2000" data-y="500">
                 <img src="img/02.jpg" />
             </div>
-            
 
             <div class="step slide" data-x="3500" data-y="500">
                 <h3>如何解决这些问题？</h3>
@@ -95,7 +95,6 @@
                 </div>
             </div>
             
-            
             <div class="step slide" data-x="5000" data-y="1500" data-rotate="180">
                 <h3>响应式设计流程</h3>
                 <div>
@@ -112,7 +111,7 @@
                 <h3>Ⅰ、明确需要兼容的设备</h3>
                 <div>
                     <p>现如今，PC、平板、智能手机屏幕尺寸大小不等，要完美的实现适配所有设备显然不太靠谱。</p>
-                    <p>“相应式设计”其实可以先挑选主流的设备作为适配目标，其他尺寸的设备做宽度自适应处理即可。</p>
+                    <p>“响应式设计”其实可以先挑选主流的设备作为适配目标，其他尺寸的设备做宽度自适应处理即可。</p>
                     <p><img src="img/03.jpg" /></p>
                 </div>
             </div>
@@ -120,7 +119,7 @@
             <div class="step slide" data-x="2000" data-y="1500" data-rotate="180">
                 <h3>Ⅱ、确定“响应区间”，设计交互原型</h3>
                 <div>
-                    <p>接下来我们便可以约定几个固定尺寸（比如：320px,480px，1024px...），以此为基准设定相应的区间值。</p>
+                    <p>接下来我们便可以约定几个固定尺寸（比如：320px,480px，1024px...），以此为基准设定响应的区间值。</p>
                     <p>CSS框架<a href="http://lessframework.com/" title=""><span>lessframework</span></a>也是采用这种思路，对PC到Mobile的过渡制定了几个“响应区间”，值得借鉴学习。</p>
                     <p><img src="img/04.jpg" /></p>
                 </div>
@@ -163,14 +162,89 @@
                     <p><span>3、</span>图片、视频媒体最消耗流量，同样需要为移动设备输出不同尺寸和格式的图片、视频。(PS:可以为移动设备尝试使用WebP图像格式)</p>
                 </div>
             </div>
-            
+
             <div class="step slide" data-x="-1000" data-y="2500" data-rotate="180">
-		        <pre class="prettyprint">
+                <h3>响应式设计CSS框架</h3>
+                <div>
+                    <p><span>Ⅰ、</span><a href="http://foundation.zurb.com/">Foundation</a> 它是一款易用、强大并且灵活的框架，用于创建运行于任何设备上的网站原型和最终产品代码。</p>
+                    <p><span>Ⅱ、</span><a href="http://twitter.github.com/bootstrap/">Bootstrap</a> 它是快速开发Web应用程序的前端工具包，提供了完美的响应式设计方案。</p>
+                    <p><span>Ⅲ、</span><a href="http://lessframework.com/">Lessframework</a> 它包含4个布局和3套预设布局,是一套自适应网站的CSS网格系统</p>
+                    <p><span>Ⅲ、</span><a href="http://lessframework.com/">320 and Up </a> 它使用一个小型屏幕样式表，以防止移动设备加载桌面资源。其中样式表中包含了一些颜色、排版布局等设置属性。 </p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="500" data-y="2500" data-rotate="180">
+                <h3>响应式设计开发工具</h3>
+                <div>
+                    <p><span>Ⅰ、</span><a href="http://jeremypalford.com/arch-journal/responsive-web-design-sketch-sheets">Responsive Web Desigh Sketch Sheets</a>  一个响应式草案图表的集合，是一个优秀的启点工具，可以帮助您规划“响应区间”。</p>
+                    <p><span>Ⅱ、</span><a href="http://html.adobe.com/edge/reflow/">Edge Reflow</a> </p>
+                    <p><span>Ⅲ、</span><a href="http://lessframework.com/">Lessframework</a> 它包含4个布局和3套预设布局,是一套自适应网站的CSS网格系统</p>
+                    <p><span>Ⅲ、</span><a href="http://lessframework.com/">320 and Up </a> 它使用一个小型屏幕样式表，以防止移动设备加载桌面资源。其中样式表中包含了一些颜色、排版布局等设置属性。 </p>
+                </div>
+            </div>
+
+
+
+<!--             <div class="step slide" data-x="-1000" data-y="2500" data-rotate="180">
+                <h3>响应式设计怎么测试？</h3>
+                <div>
+                    <p><span>Ⅰ、</span>交互阶段就可以把草图生成图片，导入设备模拟体验</p>
+                    <p><span>Ⅱ、</span>前端开发Demo过程中，可以用模拟器时时调试不同分辨率的状态</p>
+                    <p><span>Ⅲ、</span>上线之前一定要做真机测试，任何模拟器都保证环境和真机的一致性</p>
+                </div>
+            </div> -->
+
+            <div class="step slide" data-x="500" data-y="2500" data-rotate="180">
+                <h3>响应式调试工具推荐</h3>
+                <div>
+                    <p>
+                        <span>Ⅰ、</span>模拟器：<br />
+                        <a style="margin-left:60px;" href="http://www.opera.com/zh-cn/developer/mobile-emulator">Opera Mobile Emulator </a>一款电脑上模拟移动设备的浏览器，可以100%重现 Opera Mobile 手机浏览器的效果。<br />
+                        <a style="margin-left:60px;" href="http://itunes.apple.com/sg/app/aptus/id510487565?l=zh&mt=12">Aptus</a>
+                    </p>
+                    <p>
+                        <span>Ⅰ、</span>浏览器插件：<br />
+                        <a style="margin-left:60px;" href="http://codebomber.com/jquery/resizer/">resizer</a>Chrome 扩展<br />
+                        <a style="margin-left:60px;" href="http://lab.maltewassermann.com/viewport-resizer/">Viewport Resizer</a>
+                    </p>
+                    <p>
+                        <span>Ⅱ、</span>在线Web调试：<br />
+                        <a style="margin-left:60px;" href="http://quirktools.com/screenfly/">Screenfly</a><br />
+                        <a style="margin-left:60px;" href="http://screenqueri.es/">Screenqueri.es </a><br />
+                    </p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="500" data-y="3500">
+                <h3>响应式设计案例</h3>
+                <div>
+                    <p><span>Ⅰ、</span><a href="http://www.smashingmagazine.com/"></a></p>
+                    <p><span>Ⅱ、</span><a href="http://breakingnews.com/">Breakingnews</a></p>
+                    <p><span>Ⅲ、</span>设计师根据线框图，设计不同尺寸对应的视觉稿</p>
+                    <p><span>Ⅳ、</span>前端进行HTML和CSS编码，并保持和视觉良好的沟通</p>
+                    <p><span>Ⅴ、</span>前后端约定加载、输出的文件和数据</p>
+                </div>
+            </div>
+
+            <div class="step slide" data-x="2500" data-y="3500">
+                <h3>响应式设计图书</h3>
+                <div>
+                    <p><span>Ⅰ、</span>《响应式Web设计实践》</p>
+                    <p><span>Ⅱ、</span>《响应式Web设计:HTML5和CSS3实战》</p>
+                </div>
+            </div>
+            
+            <div class="step slide" data-x="-1000" data-y="4500" data-rotate="180">
+                <pre class="prettyprint">
                     http://nmsdvid.com/snippets/
                     http://www.responsivegridsystem.com/
                     http://responsive-nav.com/
-		        </pre>
-		    </div>
+                    http://www.iteye.com/news/24211/
+                    http://aiwei.us/web-database/responsive-she-ji-ce-shi-gong-ju
+                    http://www.chinaz.com/free/2012/0514/251457.shtml
+                    http://www.360doc.com/content/13/0201/09/9200790_263533825.shtml
+                </pre>
+            </div>
 
             <div id="tiny" class="step" data-x="1500" data-y="5000" data-z="-3000" data-rotate="360" data-scale="1">
                 <p style="color:#9D9D9D">Thank You！</p>
