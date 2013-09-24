@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>蘑菇街 - 做最喜欢的自己</title>
+        <meta name="apple-mobile-web-app-title" content="蘑菇街Wap版" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no" media="(device-height: 568px)" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="grey" />
+        <link rel="apple-touch-icon-precomposed" href="/imgwap/icon/57x57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/imgwap/icon/114x114.png" />
+        <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px)" href="/imgwap/startup/640x920.jpg" />
+        <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px)" href="/imgwap/startup/640x1096.jpg" />
+
+        <link rel="stylesheet" href="http://ued.mogujie.com/cssmobile3/combo/cssmobile3-combo-min.css" />
+        <link rel="stylesheet" href="demo.css" />
+
+    </head>
+
+    <body>
+        <div class="container"> 
+            <h1 class="demo-logo">
+              <div class="logo"><img src="http://m.mogujie.com/imgwap/icon/114x114.png" width="100" /></div>
+              <p>蘑菇街WAP<small> — 全站基本CSS样式</small></p>
+            </h1>
+
+            <h3 class="tit" id="r-00"> Typography </h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <h1>h1. Heading 1</h1>
+                        <h2>h2. Heading 2</h2>
+                        <h3>h3. Heading 3</h3>
+                        <h4>h4. Heading 4</h4>
+                        <h5>h5. Heading 5</h5>
+                        <h6>h6. Heading 6</h6>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;h1&gt;h1. Heading 1&lt;/h1&gt;
+&lt;h2&gt;h1. Heading 2&lt;/h2&gt;
+&lt;h3&gt;h1. Heading 3&lt;/h3&gt;
+&lt;h4&gt;h1. Heading 4&lt;/h4&gt;
+&lt;h5&gt;h1. Heading 5&lt;/h5&gt;
+&lt;h6&gt;h1. Heading 6&lt;/h6&gt;
+</pre>
+                    </div>
+                </div>
+
+                <div class="clearfix" style="margin-top:30px;">
+                    <div class="col-md-4">
+                        <p>p. This is a paragraph of text...</p>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;p&gt; p. This is a paragraph of text...&lt;/p&gt;
+</pre>
+                    </div>
+                </div>
+   
+            </div>
+
+            <h3 class="tit" id="r-01"> Main Header </h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <header id="header">
+                            <div id="head_nav" class="head_nav">
+                                <a href="javascript:;" class="fl uinfo_show cancel_btn"><b class="icon"></b></a>
+                                <div class="nav_title_show"><h1 id="logo" class="logo" title="蘑菇街"></h1></div>
+                                <a href="javascript:;" class="fr search"><b class="icon"></b></a>
+
+                                <div class="user_nav_show" style="display: block;">
+                                    <div class="login fl">
+                                        <a href="#!login" class="login_btn"><b></b> <br />登录</a>
+                                    </div>
+                                    <div class="nav_list">
+                                        <a href="#!welcome" class="nav_icon_btn active welcome "><b></b> <br />首页</a>
+                                        <a href="#!book/shopping?title=逛街" class="nav_icon_btn shopping "><b></b> <br />逛街</a>
+                                        <a href="#!dapei/?title=搭配" class="nav_icon_btn dapei "><b></b> <br />搭配</a>
+                                        <a href="#!shaihuo/?title=晒货" class="nav_icon_btn shaihuo "><b></b> <br />晒货</a>
+                                        <a href="#!album" class="nav_icon_btn album "><b></b> <br />专辑</a>
+                                        <a href="#!tuan/?title=团购" class="nav_icon_btn tuan "><b></b> <br />团购</a>
+                                    </div>
+                                </div>
+
+                                <div class="search_tab_show">
+                                    <form action="#!search/bao" id="search_form">
+                                        <input type="text" placeholder="输入想看的宝贝" class="search_val userselect" name="search_val">
+                                    </form>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;header id="header"&gt;
+  &lt;div id="head_nav" class="head_nav"&gt;
+    &lt;a href="javascript:;" class="fl uinfo_show"&gt;&lt;b class="icon"&gt;&lt;/b&gt;&lt;/a&gt;
+    &lt;div class="nav_title_show"&gt;&lt;h1 id="logo" class="logo" title="蘑菇街"&gt;&lt;/h1&gt;&lt;/div&gt;
+    &lt;a href="javascript:;" class="fr search"&gt;&lt;b class="icon"&gt;&lt;/b&gt;&lt;/a&gt;
+    &lt;div class="user_nav_show"&gt; ... &lt;/div&gt;
+    &lt;div class="search_tab_show"&gt; ... &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+                    </div>
+                </div>   
+            </div>
+
+            <h3 class="tit" id="r-02"> Sub Header </h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <header id="header">
+                            <div id="head_nav" class="head_nav">
+                                <a href="javascript:;" class="fl uinfo_show"><b class="icon"></b></a>
+                                <div class="nav_title_show"><span class="current_title">专辑</span></div>
+                                <a href="javascript:;" class="fr search"><b class="icon"></b></a>
+                                <div class="user_nav_show">
+                                    <div class="login fl">
+                                        <a href="#!login" class="login_btn"><b></b> <br />登录</a>
+                                    </div>
+                                    <div class="nav_list">
+                                        <a href="#!welcome" class="nav_icon_btn active welcome "><b></b> <br />首页</a>
+                                        <a href="#!book/shopping?title=逛街" class="nav_icon_btn shopping "><b></b> <br />逛街</a>
+                                        <a href="#!dapei/?title=搭配" class="nav_icon_btn dapei "><b></b> <br />搭配</a>
+                                        <a href="#!shaihuo/?title=晒货" class="nav_icon_btn shaihuo "><b></b> <br />晒货</a>
+                                        <a href="#!album" class="nav_icon_btn album "><b></b> <br />专辑</a>
+                                        <a href="#!tuan/?title=团购" class="nav_icon_btn tuan "><b></b> <br />团购</a>
+                                    </div>
+                                </div>
+
+                                <div class="search_tab_show">
+                                    <form action="#!search/bao" id="search_form">
+                                        <input type="text" placeholder="输入想看的宝贝" class="search_val userselect" name="search_val">
+                                    </form>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;header id="header"&gt;
+  &lt;div id="head_nav" class="head_nav"&gt;
+    &lt;a href="javascript:;" class="fl uinfo_show cancel_btn"&gt;&lt;b class="icon"&gt;&lt;/b&gt;&lt;/a&gt;
+    &lt;div class="nav_title_show"&gt;&lt;span class="current_title"&gt;专辑&lt;/span&gt;&lt;/div&gt;
+    &lt;a href="javascript:;" class="fr search"&gt;&lt;b class="icon"&gt;&lt;/b&gt;&lt;/a&gt;
+    ...
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <header id="header">
+                            <div id="head_bar" class="head_bar">
+                                <h2 class="title"></h2>
+                                <div class="back"><a href=""><b class="icon_back"></b><span>返回</span></a></div>
+                                <div class="submit"><a href="" class="btn btn_taobao">去淘宝</a></div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;header id="header"&gt;
+  &lt;div id="head_bar" class="head_bar"&gt;
+    &lt;h2 class="title"&gt;团购&lt;/h2&gt;
+    &lt;div class="back"&gt;&lt;a href=""&gt;&lt;b class="icon_back"&gt;&lt;/b&gt;&lt;span&gt;返回&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="submit"&gt;&lt;a href="" class="btn btn_taobao"&gt;去淘宝&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <header id="header">
+                            <div id="head_bar" class="head_bar">
+                                <div class="back"><div><b class="icon_back"></b><span>宝贝详情</span></div></div>
+                                <div class="submit"><b class="icon_ok"></b><span>保存</span></div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;header id="header"&gt;
+  &lt;div id="head_bar" class="head_bar"&gt;
+    &lt;div class="back"&gt;&lt;div&gt;&lt;b class="icon_back"&gt;&lt;/b&gt;&lt;span&gt;宝贝详情&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="submit"&gt;&lt;b class="icon_ok"&gt;&lt;/b&gt;&lt;span&gt;保存&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="tit" id="r-03"> Navigation </h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <nav class="nav_tabs">
+                            <ul>
+                                <li class="selected"><a href="#!home/atme">对话</a></li>
+                                <li class=""><a href="#!home/sysmsg">通知</a></li>
+                                <li class=""><a href="#!home/msglist">私信</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;nav class="nav_tabs"&gt;
+    &lt;ul&gt;
+        &lt;li class="selected"&gt;&lt;a href="#!home/atme"&gt;对话&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=""&gt;&lt;a href="#!home/sysmsg"&gt;通知&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=""&gt;&lt;a href="#!home/msglist"&gt;私信&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-04">Filter Menu</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4" style="border-top:1px solid #d1d1d1;">
+                        <div id="filter" class="filter">
+                            <ul class="cate_select flex_col_box">
+                                <li class="all_cate flex_col all_slide_wrap active">
+                                    <a href="javascript:;" class="title"> 排序 </a> <b class="arrow"></b> 
+                                    <ul class="all_cate_list slide_mod">
+                                        <li><a href="javascript:;" param="price" filter=" ">潮流</a></li>
+                                        <li><a href="javascript:;" param="price" filter="-100">最新</a></li>
+                                    </ul>
+                                </li>
+                                <li class="all_cate flex_col all_slide_wrap">
+                                    <a href="javascript:;" class="title"> 价格 </a> <b class="arrow"></b> 
+                                    <ul class="all_cate_list slide_mod">
+                                        <li><a href="javascript:;" param="price" filter=" ">全部</a></li>
+                                        <li><a href="javascript:;" param="price" filter="-100">100元以下</a></li>
+                                        <li><a href="javascript:;" param="price" filter="101-200">100-200元</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div id="filter" class="filter"&gt;
+    &lt;ul class="cate_select flex_col_box"&gt;
+        &lt;li class="all_cate flex_col all_slide_wrap"&gt;
+            &lt;div class="title"&gt; 排序 &lt;/div&gt;
+            &lt;b class="arrow"&gt;&lt;/b&gt; 
+            &lt;ul class="all_cate_list slide_mod"&gt;
+                &lt;li&gt;&lt;a href=""&gt;潮流&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;最新&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-05">Tag</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <p class="item_tag">
+                            <span class="light">4.7折</span>  <span class="dark">包邮</span>   <span class="dark">24小时发货</span>  
+                        </p>
+                    </div>
+                
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;p class="item_tag"&gt;
+    &lt;span class="light"&gt;4.7折&lt;/span&gt;  &lt;span class="dark"&gt;包邮&lt;/span&gt;   &lt;span class="dark"&gt;24小时发货&lt;/span&gt;  
+&lt;/p&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+        
+
+            <h3 class="tit" id="r-06"> Buttons</h3>
+            <div class="row clearfix">
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <a href="#" class="btn btn_pink r3">确 认</a>
+                    </div>
+                    <div class="clearfix">
+                        <a href="#" class="btn btn_gray r3">取 消</a>
+                    </div>
+                    <div class="clearfix">
+                        <a href="#" class="btn btn_pink btn_block r3">注 册</a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;a href="#" class="btn btn_pink r3"&gt;确 认&lt;/a&gt;
+
+&lt;a href="#" class="btn btn_gray r3"&gt;取 消&lt;/a&gt;
+
+&lt;a href="#" class="btn btn_pink btn_block r3"&gt;注 册&lt;/a&gt;
+</pre>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-07"> Form Modle</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <div class="mod_form_wrap r3">
+                            <div class="mod_form">
+                                <label for="">用户名</label>
+                                <b class="split"></b>
+                                <input type="text" class="userselect text" name="username" placeholder="邮箱或昵称">
+                            </div>
+                            <div class="mod_form">
+                                <label for="">密码</label>
+                                <b class="split"></b>
+                                <input type="password" class="userselect text" name="password" placeholder="密码">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div class="mod_form_wrap r3"&gt;
+    &lt;div class="mod_form"&gt;
+        &lt;label for=""&gt;用户名&lt;/label&gt;
+        &lt;b class="split"&gt;&lt;/b&gt;
+        &lt;input type="text" class="userselect text" name="username" placeholder="邮箱或昵称"&gt;
+    &lt;/div&gt;
+    ...
+&lt;/div&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-08"> Message List</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <ul class="list_msg">
+                            <li>
+                                <div class="pic">
+                                    <a href=""><img src="http://s9.mogujie.cn/b7/avatar/130410/pon5g_kqyuc6smnjbfirlwgfjeg5sckzsew_140x180.jpg" alt="头像"></a> 
+                                </div>
+                                <div class="info">
+                                    <a href="" class="username">天明</a><p class="content">亲爱的菇凉，欢迎来到蘑菇街，牙牙教你怎么逛蘑菇街：），<a href="">查看详情&gt;</a></p>
+                                </div>
+                                <span class="time">2011年 11月24日</span>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="#!home/u/12isgg"><img src="http://s9.mogujie.cn/b7/avatar/130410/pon5g_kqyuc6smnjbfirlwgfjeg5sckzsew_140x180.jpg" alt="头像"></a> 
+                                </div>
+                                <div class="info">
+                                    <a href="#!home/u/12isgg" class="username">天明</a>
+                                    <p class="content">赞一个 我喜欢的类型。。。</p>
+                                </div>
+                                <span class="time">2011年 7月31日</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;ul class="list_msg"&gt;
+    &lt;li&gt;
+        &lt;div class="pic"&gt;
+            &lt;a href=""&gt;&lt;img src="..." alt="头像"&gt;&lt;/a&gt; 
+        &lt;/div&gt;
+        &lt;div class="info"&gt;
+            &lt;a href="" class="username"&gt;天明&lt;/a&gt;&lt;p class="content"&gt;亲爱的菇凉，欢迎来到蘑菇街...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;span class="time"&gt;2011年 11月24日&lt;/span&gt;
+    &lt;/li&gt;
+    ...
+&lt;/ul&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-09">Picture List</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <div class="cate_mod hot_mod">
+                            <div class="col_2 flex_col_box">
+                                <div class="flex_col mod_list">
+                                    <a href="">
+                                        <img src="http://s13.mogujie.cn/pic/130812/s7ulr_kqyukrsxkfbhgzcugfjeg5sckzsew_310x176.jpg">
+                                    </a>
+                                    <span class="pic_tag">最热</span>
+                                </div>
+                                <div class="flex_col mod_list">
+                                    <a href="">
+                                        <img src="http://s12.mogujie.cn/pic/130812/s7ulr_kqyv6odikfbfcrcugfjeg5sckzsew_310x176.jpg">
+                                    </a>
+                                    <span class="pic_tag">最新</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div class="cate_mod hot_mod"&gt;
+    &lt;div class="col_2 flex_col_box"&gt;
+        &lt;div class="flex_col mod_list"&gt;
+            &lt;a href=""&gt;&lt;img src="..." alt="图片"/&gt;&lt;/a&gt;
+            &lt;span class="pic_tag"&gt;最热&lt;/span&gt;
+        &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <div class="cate_mod">
+                            <div class="col_3 flex_col_box">
+                                <div class="flex_col mod_list">
+                                    <a href="">
+                                        <img src="http://s12.mogujie.cn/pic/130828/u3zuc_kqyxc22lkfbhmtdwgfjeg5sckzsew_206x234.jpg">
+                                    </a>
+                                    <span class="pic_tag">棒球帽</span>
+                                </div>
+                                <div class="flex_col mod_list">
+                                    <a href="">
+                                        <img src="http://s13.mogujie.cn/pic/130828/u3zuc_kqywc22bkfbdks3wgfjeg5sckzsew_206x234.jpg">
+                                    </a>
+                                    <span class="pic_tag">开学季</span>
+                                </div>
+                                <div class="flex_col mod_list">
+                                    <a href="">
+                                        <img src="http://s6.mogujie.cn/pic/130828/u3zuc_kqyve3kfkfbfqwlwgfjeg5sckzsew_206x234.jpg">
+                                    </a>
+                                    <span class="pic_tag">耳钉</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div class="cate_mod hot_mod"&gt;
+    &lt;div class="col_3 flex_col_box"&gt;
+        &lt;div class="flex_col mod_list"&gt;
+            &lt;a href=""&gt;&lt;img src="..." alt="图片"/&gt;&lt;/a&gt;
+            &lt;span class="pic_tag"&gt;棒球帽&lt;/span&gt;
+        &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-10"> Wall List</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <ul class="pic_list" id="wall">
+                            <li class="wall_item" style="height: 150px;"> 
+                                <a href="">
+                                    <img src="http://s13.mogujie.cn/b7/pic/130916/8usp_kqywkskkkfbfqzdwgfjeg5sckzsew_399x600.jpg_200x999.jpg" />
+                                </a>
+                            </li>
+                            <li class="wall_item" style="height: 155px;"> 
+                                <a href="">
+                                    <img src="http://s6.mogujie.cn/b7/pic/130913/5shr_kqyvczdckfbeg6dwgfjeg5sckzsew_369x572.jpg_200x999.jpg" />
+                                    <span class="pic_tag">¥145</span>
+                                </a>
+                            </li>
+                            <li class="wall_item" style="height: 150px;"> 
+                                <a href="">
+                                    <img src="http://s13.mogujie.cn/b7/pic/130916/2efzj_kqywsqkwkfbfirlwgfjeg5sckzsew_1000x1502.jpg_200x999.jpg" />
+                                </a>
+                            </li>
+                            <li class="wall_item" style="height: 143px;"> 
+                                <a href="">
+                                    <img src="http://s6.mogujie.cn/b7/pic/130916/gkfz4_kqyxi5skkfbdistwgfjeg5sckzsew_500x715.jpg_200x999.jpg" />
+                                    <span class="pic_tag">¥629</span>
+                                </a>
+                            </li>
+                            <li class="wall_item" style="height: 199px;"> 
+                                <a href="">
+                                    <img src="http://s13.mogujie.cn/b7/pic/130828/5bkdx_kqyxgvlekfbfcysugfjeg5sckzsew_2952x5734.jpg_200x999.jpg" />
+                                </a>
+                            </li>
+                            <li class="wall_item" style="height: 135px;"> 
+                                <a href="">
+                                    <img src="http://s13.mogujie.cn/b7/bao/130908/sklih_kqyxgt2xkfbg2vtwgfjeg5sckzsew_400x540.jpg_200x999.jpg" />
+                                </a>
+                            </li>
+                            <li class="wall_item" style="height: 115px;"> 
+                                <a href="">
+                                    <img src="http://s6.mogujie.cn/b7/bao/130917/1_kqyxm5slkfbfircugfjeg5sckzsew_790x909.jpg_200x999.jpg" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+                        HTML：
+<pre class="prettyprint linenums">
+&lt;ul class="pic_list" id="wall"&gt;
+    &lt;li class="wall_item" style="height: 150px;"&gt; 
+        &lt;a href=""&gt;
+            &lt;img src="..." alt="图片" /&gt;
+            &lt;span class="pic_tag"&gt;¥629&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    ...
+&lt;/ul&gt;
+</pre>
+                        JavaScript：
+<pre class="prettyprint linenums">
+var wall = document.getElementById('wall');
+new Masonry(wall);
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-11">Images</h3>
+            <div class="row pic">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <img alt="图片" src="http://s13.mogujie.cn/avatar/girl_avatar_default.jpg_200x999.jpg" />
+
+                        <img alt="图片" class="r50" src="http://s13.mogujie.cn/avatar/girl_avatar_default.jpg_200x999.jpg" />
+
+                        <img alt="图片" class="r3" src="http://s13.mogujie.cn/avatar/girl_avatar_default.jpg_200x999.jpg" />
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;img src="..." alt="图片" /&gt;
+&lt;img class="r50" src="..." alt="图片" /&gt;
+&lt;img class="r3" src="..." alt="图片" /&gt;
+</pre>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-12">Pagination</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4">
+                        <div class="wall-page" style="display:block;">
+                            <span class="prev-page" style="display: inline-block;">上一页</span> <span class="next-page" style="display: inline-block;">下一页</span> 
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div class="wall-page" style="display:bolck;"&gt;
+    &lt;span class="prev-page" style="display:inline-block;"&gt;上一页&lt;/span&gt; &lt;span class="next-page" style="display:inline-block;"&gt;下一页&lt;/span&gt; 
+&lt;/div&gt;
+</pre>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-13">No Content</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4" style="position:relative; height:200px;">
+                        <div class="no_content"><p>还没有内容</p></div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div class="no_content"&gt;
+    &lt;p&gt;还没有内容&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+                        注意：no_content的外层容器需要设置相对定位和高度值
+
+                    </div>
+                </div>
+            </div>
+
+
+            <h3 class="tit" id="r-14">Tips</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4" style="position:relative; height:100px;">
+                        <div id="tips_wrap" class="attention">加入专辑成功！</div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div id="tips_wrap" class="attention"&gt;
+  加入专辑成功！
+&lt;/div&gt;
+</pre>
+                        注意：tips_wrap的外层容器需要设置相对定位和高度值
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tit" id="r-15">Loading</h3>
+            <div class="row clearfix">
+                <div class="clearfix">
+                    <div class="col-md-4" style="position:relative; height:200px;">
+                        <div id="loading_wrap">
+                            <div class="mask">
+                                <span>加载中...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+<pre class="prettyprint linenums">
+&lt;div id="loading_wrap"&gt;
+    &lt;div class="mask"&gt;
+        &lt;span&gt;加载中...&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        注意：loading_wrap的外层容器需要设置相对定位和高度值
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="../../libs/seajs/sea.js"></script>
+        <script>
+
+            seajs.config({
+                plugins: ['shim'],
+
+                base: "../../libs/",
+
+                alias: {
+                    'zepto': {
+                        src: 'zepto/zepto.js',
+                        exports: 'zepto'
+                    },
+
+                    'underscore': {
+                        src: 'underscore/underscore.js',
+                        exports: '_'
+                    },
+
+                    'backbone': {
+                        src: 'backbone/backbone.js',
+                        deps: ['underscore', 'zepto'],
+                        exports: 'Backbone'
+                    },
+
+                    'prettify': {
+                        src: 'prettify/prettify.js'
+                    },
+
+                    'mansonry': {
+                        src: 'masonry/masonry.js'
+                    }
+
+                }
+            });
+
+            seajs.use('./demo.js',function (app) {
+                app.initialize();
+            });
+        </script>
+    </body>
+</html>
