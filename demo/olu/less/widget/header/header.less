@@ -1,0 +1,119 @@
+//
+// header 导航
+// --------------------------------------------------
+
+@logo-path: "../../img/header-logo.png";
+@icon-path: "../../img/header-icon.png";
+@head-bg: "../../img/header-bar.jpg";
+@head-bg-x2: "../../img/header-bar@x2.jpg";
+
+.ui-head-bar{
+  position: relative;
+  width: 100%;
+  height: 45px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  background: #f93867 url(@head-bg) no-repeat top center;
+  background-size: 100% auto;
+
+  .arr,.subfield{
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    background: url(@icon-path) no-repeat 16px -18px;
+    background-size: 21px auto;
+  }
+  .subfield{
+    background-position: 16px -86px;
+  }
+  .title{
+    -webkit-flex:1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+  }
+  .h-icon{
+    display: inline-block;
+    width: 61px;
+    height: 21px;
+    background: url(@logo-path) no-repeat 0 0;
+    background-size: 62px;
+    vertical-align: middle;
+  }
+  .badge{
+    width: 40px;
+  }
+}
+/*分类*/
+.ui-subfield-con{
+  position: absolute;
+  top:0;
+  left: -200px;
+  min-height: 320px;
+  width: 200px;
+  background-color: #fff;
+  z-index: 2000;
+  color: #424242;
+  .sf-close{
+    padding: 10px 10px 0 10px;
+    text-align: right;
+    span{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url(@icon-path) no-repeat 0 0;
+      background-size: 21px auto;
+    }
+  }
+  .sf-list{
+    padding-left: 24px;
+    li{
+      line-height: 44px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+  .sf-login{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 44px;
+    line-height: 44px;
+    width: 200px;
+    p{
+      margin-left: 24px;
+      border-top: 1px solid #e5e5e5;
+      span{
+        display: inline-block;
+        padding-left: 24px;
+        background: url(@icon-path) no-repeat 0 -56px;
+        background-size: 21px auto;
+      }
+    }
+  }
+}
+@-webkit-keyframes slidIn{
+  0%{left:-200px;}
+  100%{left: 0;}
+}
+@-webkit-keyframes slidOut{
+  form{left:0;}
+  to{left: -200px;}
+}
+.slidIn{
+  -webkit-animation:slidIn .8s ease both 0;
+}
+.slidOut{
+  -webkit-animation:slidOut .8s ease both 0;
+}
+
+// 重设图片尺寸
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .head-bar{
+    background-image: url(@head-bg-x2);
+    background-size: 100% auto;
+  }
+}
+

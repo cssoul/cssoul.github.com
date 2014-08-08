@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>navs</title>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/mgui.css" media="all">
+
+    <style>
+        #main{
+            min-height: 600px;
+            padding: 10px 5px;
+            background: #fff;
+        }
+        .title{
+            color: #333;
+        }
+        .description{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .example{
+            margin-top: 15px;
+        }
+        .example > h3{
+            margin-bottom: 4px;
+        }
+        .example > p{
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: #888;
+        }
+        .example .grid{
+            margin-bottom: 10px;
+        }
+        .example .grid .ui-nav{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="title">navs</h1>
+        <p class="description">页面中需要导航，请一定要记得使用ui-nav哦 ^_^</p>
+        <div class="example">
+
+            <h3>基本用法</h3>
+            <p>一般会出现两列、三列的导航，偶尔也会有四列的情况，但是我们只需要更改nav-后的数字，即可满足需求。</p>
+            <section class="grid">
+                <ul class="ui-nav nav-3">
+                  <li><a href="#">我的喜欢</a></li>
+                  <li><a href="#">我的关注</a></li>
+                  <li class="active"><a href="#">我的专辑</li>
+                </ul>
+            </section>
+
+            <p>有时候，需要显示未读消息。</p>
+            <section class="grid">
+                <ul class="ui-nav nav-4">
+                  <li class="active"><a href="#">待付款 <span class="badge">42</span></a></li>
+                  <li><a href="#">待发货</a></li>
+                  <li><a href="#">待收获 <span class="ui-badge">3</span></a></li>
+                  <li><a href="#">交易结束</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>

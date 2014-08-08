@@ -1,0 +1,39 @@
+//
+// Animate
+// --------------------------------------------------
+
+// fadeIn
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+.fadeIn {
+    .animation(fadeIn .8s ease both 0);
+}
+
+// fadeOut
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}    
+    100% {opacity: 0;}
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.fadeOut {
+    .animation(fadeOut .8s ease both 0);
+}
+
+// loading
+@-webkit-keyframes loading{
+    from {
+        .rotate(0deg);
+    }
+    to {
+        .rotate(360deg);
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>List Group</title>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/mgui.css" media="all">
+
+    <style>
+        #main{
+            min-height: 600px;
+            padding: 10px 5px;
+            background: #fff;
+        }
+        .title{
+            color: #333;
+        }
+        .description{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .example{
+            margin-top: 15px;
+        }
+        .example > h3{
+            margin-bottom: 4px;
+        }
+        .example > p{
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: #888;
+        }
+        .example .grid{
+            margin-bottom: 10px;
+        }
+        .example .grid div{
+            height: 50px;
+            background: #98aeaa;
+        }
+        .example .grid .fr{
+            background: #d0bfb1;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="title">List Group</h1>
+        <p class="description">List组件不仅支持简单的元素的列表, 也可以自定义复杂的内容。</p>
+        <div class="example">
+            <h3>常见的链接列表</h3>
+            <p>经常会遇到需要超链接的列表，试试这个吧。</p>
+            <section class="grid">
+                <ul class="ui-list">
+                  <a href="" class="ui-list-item">韩版纯色系带雪纺宽松休闲九分裤</a>
+                  <a href="" class="ui-list-item">韩国东大门精制刺绣花朵绘画图腾雪纺透视波浪板百搭无袖衬衣衬衫</a>
+                  <a href="" class="ui-list-item">新款韩版简约舒适尖头平底单鞋</a>
+                </ul>
+            </section>
+
+            <h3>带徽章的列表</h3>
+            <p>有时候，列表需要一些特殊标记的标签元素，并且还显示在右边，有木有→_→</p>
+            <section class="grid">
+                <ul class="ui-list">
+                  <li class="ui-list-item"><span class="ui-badge"></span>韩版纯色系带雪纺宽松休闲九分裤</li>
+                  <li class="ui-list-item"><span class="ui-badge">2</span>新款韩版简约舒适尖头平底单鞋</li>
+                  <li class="ui-list-item"><span class="ui-badge">51</span>雪纺透视波浪板百搭无袖衬衣衬衫</li>
+                </ul>
+            </section>
+
+            <h3>自定义内容</h3>
+            <p>ui-list-item可以添加任何HTML,如下所示</p>
+            <section class="grid">
+                <ul class="ui-list">
+                  <li class="ui-list-item">
+                    <h4 class="ui-list-item-hd">李筱娜N：</h4>
+                    <p class="ui-list-item-bd">欧美风的一款连衣裙，有点小性感，夏天总要漏点什么的~ <a class="glare" href="">@搭配小秘书</a></p>
+                  </li>
+                  <li class="ui-list-item">
+                    <h4 class="ui-list-item-hd">穿着花短袖的石头：</h4>
+                    <p class="ui-list-item-bd">为什么上面写69.90，去购买就要85了!!!</p>
+                  </li>
+                  <li class="ui-list-item">
+                    <h4 class="ui-list-item-hd">午间喝清茶：</h4>
+                    <p class="ui-list-item-bd">很久没有白板背景啦~最爱风格之一~高腰裤，短上衣~拉长比例啊！[酷]微博：</p>
+                  </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>

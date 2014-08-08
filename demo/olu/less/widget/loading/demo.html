@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Loading</title>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/mgui.css" media="all">
+
+    <style>
+        #main{
+            min-height: 600px;
+            padding: 10px 5px;
+            background: #fff;
+        }
+        .title{
+            color: #333;
+        }
+        .description{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .example{
+            margin-top: 15px;
+        }
+        .example h3{
+            margin-bottom: 8px;
+        }
+        .example p{
+            margin-bottom: 15px;text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="title">loading</h1>
+        <p class="description">全站通用Loading组件 ~</p>
+        <div class="example">
+            <h3>简洁版</h3>
+            <p>
+                <span class="ui-loading"></span>
+            </p>
+
+            <h3>带文字</h3>
+            <p>
+                <span class="ui-loading"></span>加载中...
+            </p>
+
+            <h3>全屏覆盖</h3>
+            <p>
+                <span class="fl ui-btn ui-btn-pink" id="showloading">点击显示</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="ui-loading-wrap">
+        <p class="mask"><span></span></p>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            var btn = document.querySelector('#showloading'),
+                mask = document.querySelector(".ui-loading-wrap");
+
+            mask.style.display = "none";
+
+            btn.addEventListener('click',function(){
+                mask.style.display = "block";
+                mask.style.background = "rgba(0,30,110,.9)";
+            },false);
+
+            mask.addEventListener('click',function(){
+                mask.style.display = "none";
+            },false);
+
+            mask.addEventListener('touchmove',function(e){
+                e.preventDefault();
+            },false);
+        }
+    </script>
+</body>
+</html>

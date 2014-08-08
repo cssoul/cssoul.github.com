@@ -1,0 +1,40 @@
+//
+// Grid
+// --------------------------------------------------
+
+
+.grid {
+  width: 100%;
+  overflow: hidden; /* hack to take up height*/
+  &:after {
+    content: '';
+    clear: both;
+  }
+
+  .col2,
+  .col3,
+  .col1-3,
+  .col2-3 {
+    float: none;
+    width: 100%;
+
+    :after {
+      content: '';
+      clear: both;
+    }
+  }
+}
+
+@media handheld, only screen and (min-width: 768px) {
+  .grid{
+    .col2 {
+      width: 50%;
+    }
+    .col3, .col1-3 {
+      width: 33.3333333333%;
+    }
+    .col2-3 {
+      width: 66.6666666666%;
+    }
+  }
+}

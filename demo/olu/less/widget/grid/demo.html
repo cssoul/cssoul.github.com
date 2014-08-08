@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Grid</title>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/mgui.css" media="all">
+
+    <style>
+        #main{
+            min-height: 600px;
+            padding: 10px 5px;
+            background: #fff;
+        }
+        .title{
+            color: #333;
+        }
+        .description{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .example{
+            margin-top: 15px;
+        }
+        .example h3{
+            margin-bottom: 8px;
+        }
+        .example .grid{
+            margin-bottom: 10px;
+        }
+        .example .grid div{
+            height: 50px;
+            background: #98aeaa;
+        }
+        .example .grid .fr{
+            background: #d0bfb1;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="title">Grid system</h1>
+        <p class="description">网格系统，是用来创建随设备宽度而改变布局的页面。主要对768px以上宽度的平板做了些变化 ~</p>
+        <div class="example">
+            <h3>两列等宽</h3>
+            <section class="grid">
+                <div class="col2 fl"></div>
+                <div class="col2 fr"></div>
+            </section>
+
+            <h3>左窄右宽</h3>
+            <section class="grid">
+                <div class="col1-3 fl"></div>
+                <div class="col2-3 fr"></div>
+            </section>
+
+            <h3>左宽右窄</h3>
+            <section class="grid">
+                <div class="col2-3 fl"></div>
+                <div class="col1-3 fr"></div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

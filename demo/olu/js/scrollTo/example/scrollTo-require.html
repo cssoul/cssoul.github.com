@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Scroll</title>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+        *{
+            color: #333;
+            font: normal 16px/1.4em Helvetica, Arial, sans-serif;
+        }
+        h1{font-size: 24px;}
+        a{color: #f00;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <a id="goBottom" href="javascript:void(0);">To the bottom, please!</a>
+		<h1>Add some gold.</h1>
+
+		<p>Look what I'm dealing with, man. I'm dealing with fools and trolls. I'm dealing with soft targets, and it's just strafing runs in my underwear before my first cup of coffee &hellip; they lay down with their ugly wives and their ugly children and just look at their loser lives and then they look at me and say, 'I can't process it.' Well, no, and you never will! Stop trying! Just sit back and enjoy the show.</p>
+
+		<p>I am on a drug. It's called Charlie Sheen. It's not available. If you try it once, you will die. Your face will melt off and your children will weep over your exploded body.</p>
+
+		<p>It's being directed and written by a genius named David Ward who, I don't know, won the Academy Award at 23 for writing The Sting? It was his pen and his vision that created the classic that we know today as Major League. In fact, a lot of people think the movie's called Wild Thing, as they should. Whatever &hellip; If they want me in it, it's a smash. If they don't, it's a turd that opens on a tugboat.</p>
+
+		<p>I tried marriage. I'm 0 for 3 with the marriage thing. So, being a ballplayer &mdash; I believe in numbers. I'm not going 0 for 4. I'm not wearing a golden sombrero.</p>
+
+        <a id="goTop" href="javascript:void(0);">To the top, please!</a>
+    </div>
+
+    <script src="../../../libs/zepto/1.1.3/zepto.js"></script>
+    <script src="../../../libs/require/2.1.11/require.js"></script>
+    <script>
+        /**
+         * require JS 配置文件
+         */
+        require.config({
+            paths: {
+                scrollTo: '../scrollTo'
+            }
+        });
+
+        require([
+            'scrollTo'
+            ],function(scrollTo){
+
+            //初始化
+            $(document).ready(function($) {
+                $('#goTop').on('click', function(e) {
+                    var scroll = new scrollTo({
+                        endY: 0,
+                        duration: 200,
+                        callback: function(){
+                            console.log("scroll end");
+                        }
+                    });
+                });
+
+                $('#goBottom').on('click', function(e) {
+                    var posY = $(document).height() - $(window).height();
+                    
+                    var scroll = new scrollTo({
+                        endY: posY,
+                        duration: 200,
+                        callback: function(){
+                            console.log("scroll end");
+                        }
+                    });
+                });
+            });
+
+        });
+
+    </script>
+</body>
+</html>

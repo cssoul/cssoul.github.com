@@ -1,0 +1,44 @@
+//
+// Confirm
+// --------------------------------------------------
+
+
+.ui-confirm {
+	.mask { 
+		position: absolute;
+		width: 100%;
+		z-index: 999;
+		left: 0;
+		top: 0; 
+		background: rgba(0,0,0,0.6);
+	}
+
+	.box { 
+		position: fixed;
+		z-index: 1000;
+		left: 50%;
+    	top: 50%;
+    	width: 70%;
+		min-width: 220px;
+    	padding: 10px 5px; 
+		font-size: 15px;
+		background: #fafafa;
+		.border-radius(3px);
+		.translate(-50%, -50%);         //水平垂直居中
+	}
+	.content {
+		color: #333; 
+		text-align: center; 
+		padding: 10px;
+	}
+	.action {
+		height: 40px; 
+		text-align: center;
+
+		.ui-btn{
+			margin: 0 5px;
+			min-width: 90px;
+		}
+	}
+}
+

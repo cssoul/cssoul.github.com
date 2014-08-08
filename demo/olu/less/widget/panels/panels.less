@@ -1,0 +1,30 @@
+//
+// Panels
+// --------------------------------------------------
+
+@margin-bottom: 10px;
+@panel-background: @white;
+@panel-hd-padding: 5px 10px;
+@panel-hd-background: #f6f5f5;
+@panel-bd-padding: 10px;
+@panel-border: 1px solid #f0f0f0;
+
+
+// Base class
+.ui-panel {
+    margin-bottom: @margin-bottom;
+    border: @panel-border;
+    background: @panel-background;
+
+    // heading
+    .ui-panel-hd {
+      padding: @panel-hd-padding;
+      border-bottom: @panel-border;
+      background: @panel-hd-background;
+    }
+
+    // contents
+    .ui-panel-bd {
+      padding: @panel-bd-padding;
+    }
+}

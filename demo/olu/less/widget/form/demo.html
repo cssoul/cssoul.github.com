@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>form</title>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/mgui.css" media="all">
+
+    <style>
+        #main{
+            min-height: 600px;
+            padding: 10px 5px;
+            background: #eee;
+        }
+        .title{
+            color: #333;
+        }
+        .description{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .example{
+            margin-top: 15px;
+        }
+        .example > h3{
+            margin-bottom: 14px;
+        }
+        .example > p{
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: #888;
+        }
+        .example .grid{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="title">form</h1>
+        <p class="description">通用表单样式，可基于此表单样式构建各类功能表单。</p>
+        <div class="example">
+
+            <h3>基本用法</h3>
+            <section class="grid">
+                <div class="ui-form">
+                    <div class="ui-form-item">
+                        <label class="ui-label">退货理由<span>(必填)</span></label>
+                        <div class="ui-form-content ui-form-select">
+                            <select name="reason" class="ui-select">
+                                <option data-id="-1" value="-1">请选择退货原因</option>
+                                <option data-id="1" value="商品质量问题">商品质量问题</option>
+                                <option data-id="2" value="商品描述不符">商品描述不符</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui-form-item">
+                        <label class="ui-label">退款金额<span>(必填)</span></label>
+                        <p class="ui-form-explain">优先退订单使用的全场现金券，再退现金</p>
+                        <div class="ui-form-content">
+                            <input type="number" class="ui-input" name="price" value="0.01" data-max="0.01" />
+                        </div>
+                    </div>
+                    <div class="ui-form-item">
+                        <label class="ui-label">退货说明<span>(选填)</span></label>
+                        <div class="ui-form-content">
+                            <textarea class="ui-textarea" name="explain" cols="40" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="ui-form-item">
+                        <div class="ui-form-content">
+                            <input class="ui-checkbox" id="test2" value="" type="checkbox">
+                            <label class="ui-checkbox-label" for="test2">我已阅读并接受自主缴费服务协议</label>
+                        </div>
+                    </div>
+
+                    <div class="ui-form-submit">
+                        <a href="javascript:;" class="ui-btn ui-btn-pink">提交申请</a>
+                    </div>
+                </div>
+            </section>
+
+            <h3>表单归类 （三个字）</h3>
+            <section class="grid">
+                <div class="ui-form">
+                    <div class="ui-form-group">
+                        <div class="ui-form-item">
+                            <label class="ui-label" for="username">收货人</label>
+                            <input type="text" class="ui-input" name="username" value="天明" />
+                        </div>
+                        <div class="ui-form-item">
+                            <label class="ui-label" for="number">性别</label>
+                            <input class="ui-radio" name="sex" value="1" type="radio"> <span>男</span> 
+                            <input class="ui-radio" name="sex" value="0" type="radio"> <span>女</span>
+                        </div>
+                    </div>
+                    <div class="ui-form-submit">
+                        <a href="javascript:;" class="ui-btn ui-btn-pink">提交</a>
+                    </div>
+                </div>
+            </section>
+
+            <h3>表单归类 （四个字）</h3>
+            <section class="grid">
+                <div class="ui-form">
+                    <div class="ui-form-group">
+                        <div class="ui-form-item">
+                            <label class="ui-label w4" for="username">收货人</label>
+                            <input type="text" class="ui-input" name="username" value="天明" />
+                        </div>
+                        <div class="ui-form-item">
+                            <label class="ui-label w4" for="number">手机号码</label>
+                            <input type="tel" class="ui-input" name="number" id="" value="13506710613" /> 
+                        </div>
+                        <div class="ui-form-item">
+                            <label class="ui-label w4" for="number">收货地址</label>
+                            <input type="text" class="ui-input" name="number" id="" value="浙江省杭州市" /> 
+                        </div>
+                    </div>
+                    <div class="ui-form-submit">
+                        <a href="javascript:;" class="ui-btn ui-btn-pink">提交</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>olu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="olu，旨在整理蘑菇街H5通用样式模块库以及常用的JavaScript组件">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/docs.css" rel="stylesheet">
+	<link href="css/prettify.css" rel="stylesheet">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<style type="text/css">
+		#head-top{
+			height: 140px;
+			
+		}
+		#head-top .logo{
+			position: relative;
+			margin: 0 auto;
+			width: 250px;
+		}
+		#head-top .olu{
+			font-size: 65px;
+			color: #379ff9;
+			text-decoration: none;
+		}
+		#head-top .description{
+			color: #666;
+		}
+		#head-top img{
+			position: absolute;
+			top: 5px;
+			right: 0;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll">
+
+	<div id="head-top">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo">
+	      <a href="index.html" class="olu">olu</a>
+	      <p class="description">快速搭建移动应用</p>
+	      <img src="img/logo.jpg" width="120" alt="olu">
+	  </div>
+    </div>
+
+	<header class="navbar bs-docs-nav">
+	  <div class="container">
+	    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+	      <ul class="nav navbar-nav">
+	      	<li class="active">
+	          <a href="index.html">首页</a>
+	        </li>
+	        <li>
+	          <a href="framework.html">基础框架</a>
+	        </li>
+	        <li>
+	          <a href="css.html">通用样式库</a>
+	        </li>
+	        <li>
+	          <a href="component.html">JavaScript组件</a>
+	        </li>
+	        <li>
+	          <a href="start.html">开始使用</a>
+	        </li>
+	        <li>
+	          <a href="document.html">规范文档</a>
+	        </li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="http://10.0.0.32:3000/">划船队</a></li>
+	        <li><a href="https://trello.com/b/wX0VQ0bz/-">trello</a></li>
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
+
+	<!-- MAIN CONTENT -->
+	<div class="container bs-docs-container">
+		<div class="row">
+			<div class="col-md-3 sidebar">
+				<div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+					<ul class="nav bs-docs-sidenav list-group">
+						<li class="list-group-item"><a href="#overview"><i class="icon-chevron-right"></i> olu 是什么</a></li>
+						<li class="list-group-item"><a href="#modals"><i class="icon-chevron-right"></i>olu 的特点</a></li>
+						<li class="list-group-item"><a href="#confirm"><i class="icon-chevron-right"></i> 兼容性</a></li>
+						<li class="list-group-item"><a href="#collapse"><i class="icon-chevron-right"></i> 其他</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-9" role="main">
+				<h1>关于 olu</h1>
+
+				<section class="bs-docs-section">
+					<div class="page-header" id="overview">
+						<h2>olu 是什么？</h2>
+					</div>
+					<p>
+						olu在约鲁巴语中意思是“蘑菇”。olu旨在整理蘑菇街移动端常用的JavaScript组件以及UI。
+						它包括了一套通用样式模块库，一些常用的组件样式
+
+						olu 是漫游仙境的童话女神，是支付宝的样式解决方案，是一套精选的基于 CMD 生态圈的样式模块集合，是 Arale 的子集，也是一套模块化的样式命名和组织规范，是写 CSS 的更好方式。
+					</p>
+
+她包括了一套通用样式模块库，一个模块化样式构建规范，一组帮助书写和组织样式的工具，以及产出更多 Alice 模块和样式库的完善方案。
+					</p>
+
+					<h3>Why?</h3>
+					<p>Tabs and carousels are basically the same thing (from a functional point of view): A collection of elements of which only one is visible at a time. You switch between the elements by clicking on tab headers or on navigation pills. Carousels are a bit more advanced
+					than this but the core functionality is the same. It made sense to have a library to provide the common functionality for both. You can even think beyond just tabs and carousels - how about a pagination module that switches between pages (e.g. &laquo; 1 2 3...10 &raquo;)? Or a side menu that shows various pages
+					with a nice transition between the pages? This pattern is quite used on the web.</p>
+
+					<h3>依赖</h3>
+					<p>If you want to use transitions you need to load bootstrap-transition.js before this.</p>
+
+					<h3>案例</h3>
+					<div class="bs-docs-example" style="padding-bottom: 24px;">
+						<div class="pane-wrapper" id="panes-example">
+							<div><img src="assets/img/carousel1.jpg"></div>
+							<div><img src="assets/img/carousel2.jpg"></div>
+						</div>
+						<button class="btn" id="select-pane1">Show 1</button>
+						<button class="btn" id="select-pane2">Show 2</button>
+
+					</div>
+					<pre class="prettyprint linenums">
+&lt;div class="pane-wrapper" id="panes-example">
+  &lt;div>&lt;img src="assets/img/carousel1.jpg">&lt;/div>
+  &lt;div>&lt;img src="assets/img/carousel2.jpg">&lt;/div>
+&lt;/div>
+&lt;button class="btn" id="select-pane1">Show 1&lt;/button>
+&lt;button class="btn" id="select-pane2">Show 2&lt;/button>
+&lt;script>
+  $(function() {
+    var $panes = $.scojs_panes('#panes-example', {easing: 'flip'});
+    $('#select-pane1').on('click', function() {
+      $panes.select(0);
+    });
+    $('#select-pane2').on('click', function() {
+      $panes.select(1);
+    });
+  });
+&lt;/script></pre>
+
+					<h2>用法</h2>
+					<h3>访问插件的对象实例</h3>
+					<pre class="prettyprint linenums">var $panes = $.scojs_panes(selector, options);</pre>
+
+					<h2 id="panes-options">参数</h2>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th style="width: 100px;">名称</th>
+								<th style="width: 50px;">类型</th>
+								<th style="width: 50px;">默认值</th>
+								<th>说明</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>active</td>
+								<td>integer</td>
+								<td>0</td>
+								<td>The index of the active pane (0 based).</td>
+							</tr>
+							<tr>
+								<td>easing</td>
+								<td>string</td>
+								<td></td>
+								<td>The css class to add to the wrapper. You could add the class yourself in html without specifying this option to the plugin but I might implement a javascript fallback for fade/slide so it's better
+								that the plugin is aware of this. At the moment you can use <code>xfade</code>, <code>slide</code> and <code>flip</code>. You can, of course, define your own css-based transition effects, in which case you'd specify here the name of your css class.<br>
+								For example, you could use easing: 'flip-vertical', copy all styles that start with .pane-wrapper.flip in scojs.css, replace .flip with .flip-vertical there and rotateY with rotateX.</td>
+							</tr>
+							<tr>
+								<td>onBeforeSelect</td>
+								<td>function</td>
+								<td></td>
+								<td>The callback to run just before selecting a new pane. If your callback returns false, the new pane will not be selected. Inside the function, <code>this</code> refers to the panes object so you can access all other object properties (like this.options, etc).</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2 id="panes-methods">方法</h2>
+					<h4>.select(index)</h4>
+					<p>Select the index-th element (0-based). Returns true if the element was selected or false if not (selection might be blocked by the onBeforeSelect callback).</p>
+					<pre class="prettyprint linenums">
+var $panes = $.scojs_panes('#foo', {active: 1});
+$panes.select(0);</pre>
+
+					<h4>.prev()</h4>
+					<p>Select the previous element. If the first element is active, <code>prev()</code> selects the last one. Returns true if the element was selected or false if not (selection might be blocked by the onBeforeSelect callback).</p>
+					<pre class="prettyprint linenums">
+var $panes = $.scojs_panes('#foo', {active: 1});
+$panes.prev();</pre>
+
+					<h4>.next()</h4>
+					<p>Select the next element. If the last element is active, <code>next()</code> selects the first one. Returns true if the element was selected or false if not (selection might be blocked by the onBeforeSelect callback).</p>
+					<pre class="prettyprint linenums">
+var $panes = $.scojs_panes('#foo');
+$panes.next();</pre>
+				</section>
+
+				<section class="bs-docs-section">
+					<div class="page-header" id="modals">
+						<h1>Panes <small>sco.panes.js</small></h1>
+					</div>
+
+					<h3>What?111</h3>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/docs.min.js"></script>
+	<script src="js/prettify.js"></script>
+	<script>
+		$(function() {
+		    window.prettyPrint && prettyPrint();
+		});
+	</script>
+</body>
+</html>

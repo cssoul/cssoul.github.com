@@ -1,0 +1,44 @@
+//
+// Loading
+// --------------------------------------------------
+
+@loading-bg: "../../img/loading.png";
+@loading-mask-bg: "../../img/loading-mask.png";
+
+.ui-loading {
+    display: inline-block;
+    .squared(40px);
+    vertical-align: middle;
+    background: url("@{loading-bg}") 0 0 no-repeat;
+    background-size: 40px auto;
+    .animation(loading 2s linear 0 infinite);
+    -webkit-transform:translateZ(0);	//阻止闪动
+}
+
+
+.ui-loading-wrap{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    .squared(100%);
+    
+    .mask, .mask span{
+        .squared(71px);
+        background-image: url("@{loading-mask-bg}");
+        background-repeat: no-repeat;
+        background-size: 71px auto;
+    }
+    .mask{
+        position:absolute;
+        left:50%;
+        top:50%;
+        background-position: 0 0;
+        .translate(-50%, -50%);        //水平垂直居中
+        span{
+            display:block;
+            background-position: 0 100%;
+            .animation(loading 2s linear 0 infinite);
+            -webkit-transform:translateZ(0);      //阻止闪动
+        }
+    }
+}

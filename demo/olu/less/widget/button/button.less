@@ -1,0 +1,100 @@
+//
+// Button
+// --------------------------------------------------
+
+
+// Button sizes
+.btn-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  line-height: @line-height;
+  .border-radius(@border-radius);
+}
+
+
+// Button  (just like .ui-btn-pink .ui-btn-gray .ui-btn-white...)
+
+.ui-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: none;
+    background-image: none;
+    .btn-size(6px, 12px, @font-size-base, @line-height-base, 3px);
+
+    &:active,
+    &.active {
+        outline: 0;
+    }
+}
+
+.ui-btn-pink {
+    color: @white;
+    .linear-gradient(e("top, #ff5e7a, #f24868"));
+
+    &:active,
+    &.active {
+        background: #ef4a6a;
+    }
+}
+
+.ui-btn-gray {
+    color: @white;
+    .linear-gradient(e("top, #646464, #484848"));
+
+    &:active,
+    &.active {
+        background: #484848;
+    }
+}
+
+.ui-btn-white {
+    color: #424242;
+    border: 1px solid #ccc;
+    background: #fdfdfd;
+
+    &:active,
+    &.active {
+        background: none;
+    } 
+}
+
+.ui-btn-disabled {
+    color: @gray-light;
+    border: 1px solid #d8d8d8;
+    background: @white;
+
+    &:active,
+    &.active {
+        background: none;
+    } 
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.ui-btn-lg {
+  .btn-size(8px, 20px, @font-size-large, @line-height-base, 4px);
+}
+
+.ui-btn-sm {
+  .btn-size(4px, 8px, @font-size-small, @line-height-base, 2px);
+}
+
+
+
+// Block button
+// --------------------------------------------------
+
+.ui-btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.ui-btn-block + .ui-btn-block {
+  margin-top: 5px;
+}

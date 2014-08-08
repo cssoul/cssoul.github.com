@@ -1,0 +1,32 @@
+//
+// Empty
+// --------------------------------------------------
+
+
+.ui-empty{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    .translate(0, -50%);         //水平垂直居中
+
+}
+
+.ui-empty-icon{
+    display: inline-block;
+    .squared(127px);
+    line-height: 150px;
+    color: @white;
+    background: #ddd5d7;
+    .border-radius(50%);
+
+    i{
+        font-size: 60px;
+    }
+}
+.ui-empty-text{
+    margin: 15px 0 10px;
+}
+.ui-empty-btn{
+    .ui-btn{min-width: 80px;}
+}

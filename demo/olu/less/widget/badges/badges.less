@@ -1,0 +1,40 @@
+//
+// Badges
+// --------------------------------------------------
+
+
+@badge-color: @white;
+@badge-line-height: 1;
+@badge-bg: @highlight;
+@badge-border-radius: 10px;
+
+
+.ui-badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 6px;
+  font-size: @font-size-small;
+  color: @badge-color;
+  line-height: @badge-line-height;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: @badge-bg;
+  .border-radius(@badge-border-radius);
+
+  // Empty badges collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for badges in buttons
+  .ui-btn & {
+    position: relative;
+    top: -1px;
+  }
+}
+
+.ui-badge-white{
+	color: @highlight;
+	background-color: @white;
+}

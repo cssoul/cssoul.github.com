@@ -1,0 +1,51 @@
+//
+// navs
+// --------------------------------------------------
+
+
+@nav-height: 40px;
+@nav-font-szie: @font-size-base;
+@nav-background: @white;
+@nav-border: 1px solid #d8d8d8;
+
+.ui-nav{
+    display: -webkit-box;
+    height: @nav-height;
+    background: @nav-background;
+    border-bottom: @nav-border;
+    overflow: hidden;
+
+    li{
+        -webkit-box-flex: 1;
+        line-height: 40px;
+        text-align: center;
+        font-size: @nav-font-szie;
+        color: @link-color;
+
+        > a{color: inherit;}
+
+        &.active{
+            border-bottom: solid 2px @pink;
+            color: @pink;
+
+            > a{color: inherit;}
+        }
+    }
+
+    &.nav-2{
+        li{
+            .set-columns(100%, 2);
+        }
+    }
+    &.nav-3{
+        li{
+            .set-columns(100%, 3);
+        }
+    }
+    &.nav-4{
+        li{
+            .set-columns(100%, 4);
+        }
+    }
+}
+
