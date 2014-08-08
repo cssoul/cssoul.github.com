@@ -36,20 +36,71 @@
 <body>
     <div id="main">
         <h1 class="title">confirm</h1>
-        <p class="description">全站通用按钮组件，无图片纯 css 实现~</p>
+        <p class="description">全站通用弹出组件（包括confirm 、alert）~</p>
         <div class="example">
-            <div class="ui-confirm" style="visibility: visible;">
-				<div class="mask" style="height: 630px;"></div>
-				<div class="box">
-					<div class="content">确定要删除该商品吗?</div>
-					<div class="action">
-						<span class="ui-btn ui-btn-white cancel">取消</span>
-						<span class="ui-btn ui-btn-pink confirm">确定</span>
-					</div>
-				</div>
-			</div>
-        </div>
+            <h3>弹出alert提示框</h3>
+            <p>
+                <span class="ui-btn ui-btn-pink" id="showAlert">点击显示</span>
+            </p>
 
+            <h3>弹出confirm提示框</h3>
+            <p>
+                <span class="ui-btn ui-btn-pink" id="showConfirm">点击显示</span>
+            </p>
+        </div>
     </div>
+
+    <div class="ui-confirm" id="alert">
+        <div class="mask" style="height: 100%;"></div>
+        <div class="box">
+            <div class="content">恭喜，你申请成功！</div>
+            <div class="action">
+                <span class="ui-btn ui-btn-pink confirm">我知道了</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui-confirm" id="confirm">
+        <div class="mask" style="height: 100%;"></div>
+        <div class="box">
+            <div class="content">确定要删除该商品吗?</div>
+            <div class="action">
+                <span class="ui-btn ui-btn-white cancel">取消</span>
+                <span class="ui-btn ui-btn-pink confirm">确定</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            var btn1 = document.querySelector('#showAlert'),
+                btn2 = document.querySelector('#showConfirm'),
+                confirm = document.querySelector("#confirm"),
+                alert = document.querySelector("#alert"),
+                ok1 = document.querySelector("#alert .confirm")
+                ok2 = document.querySelector("#confirm .confirm");
+
+            alert.style.display = "none";
+            confirm.style.display = "none";
+            
+            btn1.addEventListener('click',function(){
+                alert.style.display = "block";
+            },false);
+
+            btn2.addEventListener('click',function(){
+                confirm.style.display = "block";
+            },false);
+
+            
+            ok1.addEventListener('click', function(){
+                alert.style.display = "none";
+            },false);
+
+            ok2.addEventListener('click', function(){
+                confirm.style.display = "none";
+            },false);
+        }
+    </script>
 </body>
 </html>
