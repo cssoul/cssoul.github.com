@@ -139,7 +139,7 @@
   width: 40px;
   height: 40px;
   vertical-align: middle;
-  background: url("../../img/loading.png") 0 0 no-repeat;
+  background: url("img/loading.png") 0 0 no-repeat;
   background-size: 40px auto;
   -webkit-animation: loading 2s linear 0 infinite;
   animation: loading 2s linear 0 infinite;
@@ -156,7 +156,7 @@
 .ui-loading-wrap .mask span {
   width: 71px;
   height: 71px;
-  background-image: url("../../img/loading-mask.png");
+  background-image: url("img/loading-mask.png");
   background-repeat: no-repeat;
   background-size: 71px auto;
 }
