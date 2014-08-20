@@ -4,22 +4,28 @@
 
 
 .ui-confirm {
+	position: fixed;
+	left: 0;
+    top: 0;
+    z-index: 999;
+    .squared(100%);
+
 	.mask { 
 		position: absolute;
 		width: 100%;
-		z-index: 999;
 		left: 0;
 		top: 0; 
 		background: rgba(0,0,0,0.6);
 	}
 
 	.box { 
-		position: fixed;
+		position: absolute;
 		z-index: 1000;
 		left: 50%;
     	top: 50%;
     	width: 70%;
 		min-width: 220px;
+		max-width: 310px;
     	padding: 10px 5px; 
 		font-size: 15px;
 		background: #fafafa;
@@ -32,11 +38,11 @@
 		padding: 10px;
 	}
 	.action {
-		height: 40px; 
+		min-height: 34px; 
 		text-align: center;
 
 		.ui-btn{
-			margin: 0 5px;
+			margin: 0 3%;
 			min-width: 90px;
 		}
 	}

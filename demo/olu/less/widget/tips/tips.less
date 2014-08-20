@@ -5,16 +5,20 @@
 
 .ui-tips {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    min-width: 100px;
+    left: 0;
+    top: 0;
     z-index: 10000;
+    .squared(100%);
+    .center-box();         //水平垂直居中
+}
+
+.ui-tips-text{
+    display: inline-block;
+    min-width: 100px;
     text-align: center;
     padding: 10px 12px;
     line-height: @line-height-base;
     color: @white;
     background: rgba(225,42,82,0.7);
-    .box-sizing(border-box);
-    .translate(-50%, -50%);         //水平垂直居中
     .border-radius(3px);
 }
