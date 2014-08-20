@@ -118,8 +118,10 @@
           transform: scale(@ratio);
 }
 .translate(@x, @y) {
-  -webkit-transform: translate(@x, @y);
-          transform: translate(@x, @y);
+  -webkit-transform: translateX(@x);
+  -webkit-transform: translateY(@y);
+          transform: translateX(@x);
+          transform: translateY(@y);
 }
 .skew(@x, @y) {
   -webkit-transform: skew(@x, @y);
