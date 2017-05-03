@@ -1,0 +1,245 @@
+html {
+    height: 100%;
+}
+body {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+	font: 12px/1.8 Tahoma,Geneva,"微软雅黑","宋体";
+    background: #fbfbfb;
+}
+ul{
+	list-style: none outside none;
+}
+a {
+    color: #9F9F9F;
+	text-decoration:none;
+	outline: medium none;
+}
+p {
+    line-height: 21px;
+}
+i, em {
+    font-style: normal;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea {
+    -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+input:focus, textarea:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+
+
+::-webkit-scrollbar-track-piece{width:10px;background-color:#efefef;border-radius:5px}
+::-webkit-scrollbar{width:10px;height:6px ; }
+::-webkit-scrollbar-thumb{height:10px;background:#f9e3a7;cursor:pointer;border-radius:5px }
+::-webkit-scrollbar-thumb:hover{background:#f8df9c ; cursor:pointer}
+
+
+#header {
+    height: 50px;
+    width: 100%;
+    background: rgba(53, 53, 53, 0.9);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+}
+#header h1{
+    float: left;
+    margin:0  40px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+#header .button{
+    float: right;
+    font-size: 14px;
+    margin: 6px 30px;
+}
+
+
+#content{
+    width: 1024px;
+    margin-top:60px;
+    padding:0 30px;
+    clear: both;;
+}
+#portal_l{
+    width: 368px;
+    height: 558px;
+    overflow-y: scroll;
+}
+#portal_r{
+    background: url("../images/header.png") #fff no-repeat 0 0 ;
+    background-size: 100%;
+    padding-top: 58px; 
+}
+
+.groupWrapper {
+    float: left;
+    margin-right: 50px;
+    min-height: 500px;
+    width: 355px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.groupItem {
+    position: relative;
+    margin-top: 8px;
+    width: 355px;
+    min-height: 50px;
+
+}
+.groupWrapper .groupItem:first-child{
+    margin-top: 0;
+}
+
+.groupItem .itemHeader {
+    font-weight: bold;
+    height: 25px;
+    width: 100%;
+    line-height: 25px;
+}
+
+.groupItem .itemHeader h3{
+    color: #fff;
+    font: 400 13px/18px arial;
+    margin: 0 10px;
+    text-shadow: #000 0 1px 0;
+}
+
+.groupItem .itemHeader a {
+    padding: 1px;	
+	top: 0;
+    font-size: 11px;
+    font-weight: normal;
+    position: absolute;
+    text-decoration: none;
+    float: left;
+    width: 20px;
+	height: 20px;
+}
+.close {
+    background: #f00 url("../images/action-close.png") no-repeat scroll 3px 3px;
+    right: 0;
+}
+
+#portal_l .groupItem{
+    border: 1px solid #d8dde7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+#portal_l .groupItem .itemHeader{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    background: rgba(0,0,0,.4);
+}
+
+#portal_r .groupItem{
+    cursor: move;
+    margin-top: 0;
+    min-height: 25px
+}
+#portal_r .groupItem:hover{
+    border: 1px dotted #f00;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+#portal_r .groupItem .itemHeader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background: none;
+}
+#portal_r .groupItem .itemHeader h3{
+    display: none;
+}
+
+
+.groupItem .itemContent img{   
+    width: 355px;
+}
+
+.ui-sortable-placeholder {
+    border: 2px dotted #9F9F9F;
+    visibility: visible !important;
+}
+.ui-sortable-placeholder * {
+    visibility: hidden;
+}
+.portlet {
+    background-color: #FFFFCC;
+    cursor: move;
+}
+
+
+
+.button {
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: visible;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none;
+	text-align: center;
+    white-space: nowrap;
+}
+.b{
+    color: #FFFFFF;
+	background-color: #ff3a4c;
+}
+
+.b:hover,.b:focus {
+    background-color: #fa3849;
+    text-decoration: none;
+}
+
+
+#markup{
+    position: fixed;
+    right: 0;
+    top: 50px;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    color: #333;
+    background: #f8f9fc;
+    border-left: 1px solid #d8dde7;
+}
+#markup dl{
+    clear: both;
+}
+#markup dl dd{
+    height: 30px;
+    font-size: 14px;
+    margin-left: 0;
+}
+#markup .text{
+    width: 350px;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+#markup .m2{
+    height: 220px;
+}
