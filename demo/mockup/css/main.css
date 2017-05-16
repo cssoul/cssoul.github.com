@@ -58,13 +58,15 @@ input:focus, textarea:focus {
     margin:0  40px;
     height: 50px;
     line-height: 50px;
-    color: #fff;
+    color: #fae4a4;
+    text-shadow: #000 0 1px 0;
+    font-weight: 400;
 }
 
 #header .button{
     float: right;
-    font-size: 14px;
-    margin: 6px 30px;
+    font-size: 12px;
+    margin: 10px 30px 5px 0;
 }
 
 
@@ -192,24 +194,25 @@ input:focus, textarea:focus {
 
 
 .button {
-    border-radius: 3px;
+    border-radius: 20px;
     cursor: pointer;
     display: inline-block;
     overflow: visible;
-    padding: 5px 10px;
+    padding: 4px 15px;
     position: relative;
     text-decoration: none;
 	text-align: center;
     white-space: nowrap;
 }
 .b{
-    color: #FFFFFF;
-	background-color: #ff3a4c;
+    color: #efefef;
+    border: 1px solid #aaaaaa;
 }
 
 .b:hover,.b:focus {
-    background-color: #fa3849;
+    color: #fae4a4;
     text-decoration: none;
+    border: 1px solid #fae4a4;
 }
 
 

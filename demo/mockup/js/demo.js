@@ -5,7 +5,8 @@ var Jh = {
 		close: "close",
 		closetext: "关闭",
         title: "模块搭建平台",
-        creatText: "生成需求文档"
+        creatDoc: "生成DOC文档",
+        creatPdf: "生成PDF文档"
 	},
     Layout:{
         left: "portal_l",
@@ -55,13 +56,16 @@ Jh.fn = function(me) {
         },
  
         _createActionButton: function() {
-            var _save = $("<a class='button b' href='javascript:;' >"+Jh.Config.creatText+"</a>");
-            me.box.append(_save);
-            me._bindSave(_save);
+            var _saveDoc = $("<a class='button b' href='javascript:;' >"+Jh.Config.creatDoc+"</a>");
+            var _savePdf = $("<a class='button b' href='javascript:;' >"+Jh.Config.creatPdf+"</a>");
+            me.box.append(_savePdf);
+            me.box.append(_saveDoc);
+            me._bindSave(_saveDoc,"docx");
+            me._bindSave(_savePdf,"pdf");
         },
 
         //保存模块配置
-        _bindSave: function(obj) { 
+        _bindSave: function(obj, type) { 
             obj.click(function() {
                 var result = $("#" + Jh.Layout.right).sortable('toArray');
                 if(result.length <1) {
@@ -97,7 +101,7 @@ Jh.fn = function(me) {
                     html += '</body>';
                     html += '</xdoc>';
 
-                XDoc.run(html, "pdf", {}, "_blank");
+                XDoc.run(html, type, {}, "_blank");
             });
         }
     }
@@ -114,7 +118,7 @@ Jh.Portal = function(me) {
             portalWrap: "<div id='{key}' class='groupItem {key}'/>",
             itemHeader: "<div class='itemHeader'><h3>{name}</h3></div>",
             itemContent: "<div class='itemContent'/>",
-            markup:"<div id='markup'><dl> <dd>需求标题：</dd><dt><input id='M_Name' type='text' class='text' name='name' value='' /></dt></dl> <dl> <dd>需求详细说明：</dd> <dt><textarea name='desc' id='M_Desc' rows='10' class='text m2'></textarea></dt></dl></div>"
+            markup:"<div id='markup'><dl> <dd>需求标题：</dd><dt><input id='M_Name' type='text' class='text' name='name' value='' /></dt></dl> <dl> <dd>需求详细说明：</dd> <dt><textarea name='desc' id='M_Desc' rows='10' class='text m2'></textarea></dt></dl><dl><dd>使用说明：</dd><dt>1、点击左侧的模块，模块会自动添加到右侧显示； <br >2、右侧模块可以随意拖动，根据需要随意摆放位置<br >3、填写需求标题、详细说明，点击‘生成文档’按钮生成需求文档<br >4、建议Chrome浏览器浏览</dt></dl></div>"
         };
 
     return me = {
